@@ -1,0 +1,32 @@
+{
+  "name": "cse_freelanceevent_website",
+  "version": "1.0.0",
+  "description": "Landing page of the Virtual CSE Freelance event",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metidjisidahmed/CSE_FreelanceEvent_Website.git"
+  },
+  "keywords": [
+    "CSE",
+    "Freelance",
+    "Event",
+    "Dev",
+    "Landing",
+    "Page"
+  ],
+  "author": "Metidji Sid Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metidjisidahmed/CSE_FreelanceEvent_Website/issues"
+  },
+  "homepage": "https://github.com/metidjisidahmed/CSE_FreelanceEvent_Website#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
