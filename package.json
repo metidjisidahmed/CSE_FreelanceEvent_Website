@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/metidjisidahmed/CSE_FreelanceEvent_Website#readme",
   "dependencies": {
+    "animejs": "^3.2.1",
     "bootstrap": "^4.6.0",
+    "countup.js": "^2.0.7",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
