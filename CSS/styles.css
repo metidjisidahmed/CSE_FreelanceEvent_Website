@@ -1,3 +1,13 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+}
+.visible-title {
+  visibility: visible;
+}
+
 /* For Jumbotron Section*/
 .btn-primary-jumbtron{
     color: #11171a;
@@ -265,3 +275,23 @@ body {
 *{
     font-family: "Inter UI";
 }
+
+/*Slick Section Styles */
+  .slick-dots {
+    top: -4rem; }
+    .slick-dots li button::before {
+      font-size: .75rem !important;
+      line-height: 3.5rem !important; }
+    .slick-dots li button::before, .slick-dots li.slick-active button:before {
+      color: #1de9b6 !important; }
+  
+  .slick-next:before, .slick-prev:before {
+    color: rgba(29, 233, 182, 0.2); }
+  
+  .slick-next:hover:before, .slick-prev:hover:before {
+    color: #1de9b6; }
+    .img-fluid {
+      max-width: 100%;
+      height: auto; }
+      .rounded {
+        border-radius: 0.3rem !important; }

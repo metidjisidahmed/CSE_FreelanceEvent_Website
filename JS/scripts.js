@@ -1,5 +1,13 @@
 $(function () {
-
+    // Slides
+    $('.slick-about').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows: false
+    });
     // init feather icons
     feather.replace();
 
