@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "Gilroy Light";
-  src: url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.eot");
-  src: url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.woff") format("woff"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.svg#Gilroy Light") format("svg");
+    font-family: "Gilroy Light";
+    src: url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.eot");
+    src: url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.woff") format("woff"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.svg#Gilroy Light") format("svg");
 }
+
 .fixed-header {
     position: fixed;
     top: 0;
@@ -558,6 +559,91 @@ body {
 .rounded {
     border-radius: 0.3rem !important;
 }
+
+
+/*The Social Links Section*/
+
+
+/*Styling my Follow Button */
+
+.follow,
+.share {
+    display: inline-block;
+    cursor: default;
+    padding: 0;
+    margin: 0 .5em;
+    position: relative;
+    text-align: center;
+}
+
+.follow:hover .label,
+.share:hover .label {
+    opacity: 0;
+    -webkit-transition: opacity .5s .125s ease-out;
+    transition: opacity .5s .125s ease-out;
+}
+
+.follow:hover .icon,
+.share:hover .icon {
+    border-radius: 1em;
+    margin: 0 0;
+}
+
+.icon,
+.label {
+    background-color: #BA3D51;
+    line-height: 2rem;
+}
+
+.follow .label {
+    min-width: 200px;
+    font-size: 1.2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    /*font-size: .618em;*/
+    /*font-weight: 900;*/
+    letter-spacing: .0816em;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    pointer-events: none;
+    /*text-transform: uppercase;*/
+    -webkit-transition: opacity .5s .75s ease-out;
+    transition: opacity .5s .75s ease-out;
+}
+
+.icon {
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 2em;
+    margin: 0 -.5em;
+    -webkit-transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    width: 2em;
+}
+
+.icon.first {
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    margin-left: 0;
+}
+
+.icon.last {
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-right: 0;
+}
+
+.icon:hover {
+    background-color: #f84405;
+    color: #111;
+}
+
+
+/*END the social Links */
 
 
 /* the Footer Section*/
