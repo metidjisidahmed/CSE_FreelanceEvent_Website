@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('GothamMedium.eot');
+    src: url('GothamMedium.eot?#iefix') format('embedded-opentype'),
+        url('GothamMedium.woff2') format('woff2'),
+        url('GothamMedium.woff') format('woff'),
+        url('GothamMedium.ttf') format('truetype'),
+        url('GothamMedium.svg#GothamMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Bold.eot');
+    src: url('Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Gotham-Bold.woff2') format('woff2'),
+        url('Gotham-Bold.woff') format('woff'),
+        url('Gotham-Bold.ttf') format('truetype'),
+        url('Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,7 +1,114 @@
+:root {
+    --blueText: #01f2ec;
+    --purpleText: #a606e2;
+    --orangeText: #fc604a;
+    --darkerBlue: #199EB8;
+    --navbarBg: rgba(0, 0, 0, 0.9);
+    --grayTitles: #343a40;
+}
+
+.title {
+    color: var(--grayTitles) !important;
+}
+
+.bonbon {
+    font-family: 'Bonbon', cursive !important;
+}
+
+.navbarColor {
+    color: var(--navbarBg)
+}
+
+.orange {
+    color: var(--orangeText) !important;
+}
+
+.blue {
+    color: var(--blueText) !important;
+}
+
+.darkerBlue {
+    color: var(--darkerBlue) !important;
+}
+
+.purple {
+    color: var(--purpleText) !important;
+}
+
+.bg-orange {
+    background-color: var(--orangeText) !important;
+}
+
+.bg-blue {
+    background-color: var(--blueText) !important;
+}
+
+.bg-darkerBlue {
+    background-color: var(--darkerBlue) !important;
+}
+
+.bg-purple {
+    background-color: var(--purpleText) !important;
+}
+
+.bold {
+    font-weight: 800 !important;
+}
+
+.x,
+.o {
+    position: absolute;
+    z-index: -1;
+    height: 150px;
+}
+
+@media (min-width: 1200px) {
+    .register {
+        position: absolute;
+        right: 20px
+    }
+}
+
 @font-face {
     font-family: "Gilroy Light";
     src: url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.eot");
-    src: url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.woff") format("woff"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.svg#Gilroy Light") format("svg");
+    src: url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0744a43ed7aac352ec78c1404c890d72.svg#Gilroy Light") format("svg");
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('..fonts/GothamMedium/GothamMedium.eot');
+    src: url('..fonts/GothamMedium/GothamMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamMedium/GothamMedium.woff2') format('woff2'), url('..fonts/GothamMedium/GothamMedium.woff') format('woff'), url('..fonts/GothamMedium/GothamMedium.ttf') format('truetype'), url('..fonts/GothamMedium/GothamMedium.svg#GothamMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham/Gotham-Bold.eot');
+    src: url('../fonts/Gotham/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham/Gotham-Bold.woff2') format('woff2'), url('../fonts/Gotham/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* 
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham/Gotham-Thin.eot');
+    src: url('../fonts/Gotham/Gotham-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham/Gotham-Thin.woff2') format('woff2'), url('../fonts/Gotham/Gotham-Thin.woff') format('woff'), url('../fonts/Gotham/Gotham-Thin.ttf') format('truetype'), url('../fonts/Gotham/Gotham-Thin.svg#Gotham-Thin') format('svg');
+    font-weight: lighter;
+    font-display: swap;
+} */
+
+body {
+    background-color: var(--blueText);
+    font-family: 'Gotham';
+    font-weight: normal;
+    color: white;
+    font-weight: bold;
 }
 
 .fixed-header {
@@ -153,15 +260,6 @@
     padding-bottom: 9rem !important;
 }
 
-.bg-hero {
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='#000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='#053529' cx='400' cy='400' r='500'/%3E%3Ccircle fill='#0a634d' cx='400' cy='400' r='400'/%3E%3Ccircle fill='#0e9271' cx='400' cy='400' r='300'/%3E%3Ccircle fill='#13c095' cx='400' cy='400' r='200'/%3E%3Ccircle fill='#1de9b6' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
-    /* background by SVGBackgrounds.com */
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-}
-
 .bg-hero:before {
     position: absolute;
     z-index: 1;
@@ -171,7 +269,6 @@
     left: 0;
     top: 0;
     content: "";
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .bg-hero .container {
@@ -198,6 +295,7 @@
 }
 
 .smart-scroll {
+    background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
     z-index: 1020;
@@ -215,6 +313,10 @@
     margin-top: 65px;
 }
 
+.circle {
+    color: var(--navbarBg) !important;
+}
+
 .stats-col .circle {
     display: inline-block;
     width: 160px;
@@ -222,7 +324,7 @@
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     font-weight: 500;
     color: #666;
-    border: 6px solid #199EB8;
+    border: 6px solid var(--purpleText);
     border-radius: 50%;
     padding: 55px 25px 0 25px;
     position: relative;
@@ -237,7 +339,7 @@
     right: -15px;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    background-color: #E04F00;
+    background-color: var(--orangeText);
     position: absolute;
     border-radius: 50%;
     font-weight: 700;
@@ -260,19 +362,21 @@
     width: 4px;
     height: calc(100% + 50px);
     background: rgb(138, 145, 150);
-    background: -moz-linear-gradient(left, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%);
+    /* background: -moz-linear-gradient(left, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%);
-    background: linear-gradient(to right, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%);
+    background: linear-gradient(to right, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%); */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#8a9196', endColorstr='#62696d', GradientType=1);
     left: 14px;
     top: 5px;
     border-radius: 4px;
+    background-color: var(--purpleText) !important;
 }
 
 .timeline-month {
     position: relative;
     padding: 4px 15px 4px 35px;
-    background-color: #444950;
+    /* background-color: #444950; */
+    background-color: var(--orangeText);
     display: inline-block;
     width: auto;
     border-radius: 40px;
@@ -301,10 +405,11 @@
     content: '';
     width: 20px;
     height: 20px;
-    background: rgb(138, 145, 150);
-    background: -moz-linear-gradient(top, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(112, 120, 125, 1) 100%);
+    background-color: var(--purpleText);
+    /* background: rgb(138, 145, 150); */
+    /* background: -moz-linear-gradient(top, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(112, 120, 125, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(112, 120, 125, 1) 100%);
-    background: linear-gradient(to bottom, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(112, 120, 125, 1) 100%);
+    background: linear-gradient(to bottom, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(112, 120, 125, 1) 100%); */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#8a9196', endColorstr='#70787d', GradientType=0);
     border-radius: 100%;
     border: 1px solid #17191B;
@@ -376,6 +481,7 @@
 .box-title {
     padding: 5px 15px;
     border-bottom: 1px solid #17191B;
+    background-color: var(--orangeText);
 }
 
 .box-title i {
@@ -384,7 +490,8 @@
 
 .box-content {
     padding: 5px 15px;
-    background-color: #17191B;
+    /* background-color: #17191B; */
+    background-color: var(--navbarBg);
 }
 
 .box-content strong {
@@ -400,7 +507,8 @@
 .box-footer {
     padding: 5px 15px;
     border-top: 1px solid #17191B;
-    background-color: #444950;
+    /* background-color: #444950; */
+    background-color: var(--orangeText);
     text-align: right;
     font-style: italic;
 }
@@ -412,7 +520,7 @@
 /*Begin for the Formers*/
 
 .team h2 {
-    color: #199EB8;
+    color: --var(--darkerBlue);
 }
 
 .team .col-sm-3 {
@@ -460,7 +568,7 @@
 }
 
 .team .card:hover .card-title-wrap {
-    background-color: #199EB8;
+    background-color: var(--darkerBlue);
 }
 
 .team .card:hover .card-title-wrap .card-title,
@@ -508,21 +616,6 @@
 
 
 /*end for the Formers */
-
-body {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #CFD8DC;
-    text-align: left;
-    background-color: #000000;
-    height: 200vh;
-}
-
-* {
-    font-family: "Inter UI";
-}
 
 
 /*Slick Section Styles */
@@ -585,6 +678,7 @@ body {
 
 .follow:hover .icon,
 .share:hover .icon {
+    cursor: pointer;
     border-radius: 1em;
     margin: 0 0;
 }
@@ -660,4 +754,102 @@ body {
     font-size: 1rem;
     line-height: 2;
     color: white;
+}
+
+
+/* forFAQ SECTION */
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+#accordion .panel {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 15px 50px;
+}
+
+#accordion .panel-heading {
+    padding: 0;
+    border: none;
+    position: relative;
+}
+
+#accordion .panel-title a {
+    display: block;
+    padding: 10px 20px 10px 60px;
+    background: #fe5f55;
+    border-radius: 30px;
+    border: 2px solid #fe5f55;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+}
+
+#accordion .panel-title a.collapsed {
+    border: 2px solid var(--orangeText);
+    background: #fff;
+    color: var(--purpleText);
+}
+
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: var(--orangeText);
+    font-size: 18px;
+    color: var(--purpleText);
+    text-align: center;
+    border-right: 3px solid var(--orangeText);
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a.collapsed:before {
+    content: "\f067";
+    background: var(--orangeText);
+    border: none;
+}
+
+#accordion .panel-body {
+    padding: 15px 20px 0;
+    margin: 0 0 0 30px;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+    position: relative;
+}
+
+#accordion .panel-body:before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 90%;
+    background: #fe5f55;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+#accordion .panel-body:after {
+    content: "";
+    border-top: 20px solid #fe5f55;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: -48px;
 }
