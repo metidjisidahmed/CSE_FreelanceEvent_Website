@@ -1,10 +1,19 @@
 :root {
     --blueText: #01f2ec;
     --purpleText: #a606e2;
+    --purpleHover: #74099c;
     --orangeText: #fc604a;
     --darkerBlue: #199EB8;
     --navbarBg: rgba(0, 0, 0, 0.9);
     --grayTitles: #343a40;
+}
+
+.purpleHover:hover {
+    color: var(--purpleHover) !important;
+}
+
+.purpleHover-bg:hover {
+    background-color: var(--purpleHover) !important;
 }
 
 .title {
@@ -321,7 +330,6 @@ body {
     display: inline-block;
     width: 160px;
     height: 160px;
-    font-family: "Raleway", Helvetica, Arial, sans-serif;
     font-weight: 500;
     color: #666;
     border: 6px solid var(--purpleText);
