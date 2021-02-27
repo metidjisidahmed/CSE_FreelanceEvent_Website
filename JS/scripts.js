@@ -26,7 +26,7 @@ o1.setAttribute("src", "img/XO/o1.png");
 let o2 = document.createElement('img');
 o2.setAttribute("src", "img/XO/o2.png");
 let arr = [x1, x2, x3, o1, o2];
-for (let cpt = 1; cpt != 101; cpt++) {
+for (let cpt = 1; cpt != 51; cpt++) {
     let X = getRndInteger(0, maxX);
     let Y = getRndInteger(0, maxY);
     let indice = getRndInteger(0, 4);
